@@ -6,10 +6,8 @@ const args = process.argv.slice(2);
 const isQuiet = args.some((argument) => argument === "--quiet");
 const isCheck = args.some((argument) => argument === "--check");
 
-console.log("\n=== options ===\n");
 isQuiet && console.log("👉 quiet mode");
 isCheck && console.log("👉 check only");
-console.log("\n===============\n");
 
 const rootDir = "./";
 const packagesDir = path.resolve(__dirname, rootDir, "packages");
@@ -79,7 +77,6 @@ allPackageFilePath.forEach((filePath) => {
   }
   !isQuiet && console.groupEnd();
 });
-console.log("\n=== result ===\n");
 if (!allSorted.length) {
   console.log("👍 all sorted!");
 } else {
@@ -87,5 +84,7 @@ if (!allSorted.length) {
     console.group("🚫 unsorted package.json:");
     allSorted.forEach((filePath) => console.log(filePath));
     console.groupEnd();
+  } else {
+    console.log("✅ all sorted!");
   }
 }
