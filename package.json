@@ -1,0 +1,26 @@
+{
+  "name": "sort-package-dependencies",
+  "version": "0.0.1",
+  "description": "sort dependencies for package.json",
+  "keywords": [
+    "package.json",
+    "dependencies",
+    "sort"
+  ],
+  "homepage": "https://github.com/highestop/sort-package-dependencies#readme",
+  "bugs": {
+    "url": "https://github.com/highestop/sort-package-dependencies/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/highestop/sort-package-dependencies.git"
+  },
+  "author": {
+    "name": "highestop",
+    "email": "highestopchen@gmail.com"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js"
+}
